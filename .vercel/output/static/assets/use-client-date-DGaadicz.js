@@ -1,0 +1,1 @@
+import{i as e,n as t}from"./jsx-runtime-Dk72oS4N.js";import{a as n,s as r}from"./dates-7Pqtx8u9.js";var i=e(t(),1);function a(){let[e,t]=(0,i.useState)(null),[a,o]=(0,i.useState)(null),[s,c]=(0,i.useState)(null);return(0,i.useEffect)(()=>{let e=new Date;t(r(e)),o(n(e)),c(e.getMonth())},[]),{key:e,weekKey:a,month:s}}export{a as t};

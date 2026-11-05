@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Today · Henhouse",
+      "hasCanvas": false,
+      "bodyTextLen": 2810,
+      "bodyTextHash": "c400e4e00adaa6b3eafd40fa2f28f34db04fb25d2afe09b94993e4de87aa1543",
+      "bodyTextPrefix": "Skip to content Henhouse Field guide Today Timeline Guide Breeds",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Today · Henhouse",
+      "hasCanvas": false,
+      "bodyTextLen": 2639,
+      "bodyTextHash": "f5d2fa18b25be6cd4abaeaa47f21576e63a98b7c97279fbc1bac178dce2d8a4e",
+      "bodyTextPrefix": "Skip to content FIELD GUIDE Henhouse Water, feed, eggs, and the ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,159 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/timeline-04Iz0NCN.js
+var beats = [
+	{
+		week: 0,
+		milestone: "The first hour is water, warmth, and a beak dip — not handling.",
+		dos: [
+			"Set the brooder the day before so the lamp, bedding, and water are already steady.",
+			"Dip each beak in the water as they come out of the box so they learn where it is.",
+			"Use pine shavings or paper towels over a textured mat. They need grip."
+		],
+		donts: [
+			"Don’t put them on newspaper alone. Spraddle leg starts on slick floors.",
+			"Don’t use cedar shavings.",
+			"Don’t hang a heat lamp down into the bedding. Coop fires start that way."
+		]
+	},
+	{
+		week: 1,
+		milestone: "Check vents every day. Pasty butt is common and easy to miss.",
+		dos: [
+			"Soften dried manure with warm water and gently pick it off. A blocked vent kills a chick.",
+			"Keep waterers shallow or full of marbles so they can’t soak and chill.",
+			"Watch the huddle. A pile under the lamp is cold. A ring panting at the edges is hot."
+		],
+		donts: [
+			"Don’t pull dry manure off in one tug. You tear skin.",
+			"Don’t give electrolytes for days on end. Plain water is the default.",
+			"Don’t add treats, grit, or table scraps this week."
+		]
+	},
+	{
+		week: 2,
+		milestone: "Pin feathers show. They are no longer only down.",
+		dos: [
+			"Drop the brooder temperature about five degrees and give them room to choose.",
+			"Keep the starter fresh. Stale or moldy feed is a quiet killer.",
+			"Widen the brooder. Crowding shows up as picked toes."
+		],
+		donts: ["Don’t seal the box to “hold heat.” They need air without a draft on their backs.", "Don’t switch feeds because a bag looked nicer."]
+	},
+	{
+		week: 3,
+		milestone: "Wing feathers arrive, and so does the ability to hop the wall.",
+		dos: [
+			"Cover the top. A chick on the kitchen floor is a chick in trouble.",
+			"Keep lowering the heat if they sleep at the edge of the warm zone.",
+			"Refill water more often. They drink, splash, and foul it."
+		],
+		donts: ["Don’t let spilled water sit in the shavings.", "Don’t introduce adult hens “to socialize them.” Adults can kill chicks."]
+	},
+	{
+		week: 5,
+		milestone: "Short grass visits, if the day is warm and you are standing there.",
+		dos: [
+			"Ten calm minutes on short grass is enough. Bring the water.",
+			"Practice picking them up calmly so later handling isn’t a chase.",
+			"Keep the brooder as the home base until feathers fill in."
+		],
+		donts: ["Don’t turn them out into long, stemmy weeds. Impacted crops start here.", "Don’t leave them with a dog, a hawk overhead, or a gap under the gate."]
+	},
+	{
+		week: 6,
+		milestone: "Many flocks can leave the lamp if they are fully feathered and nights stay mild.",
+		dos: [
+			"Judge by feathers and behavior, not the calendar alone. A bare belly still needs heat.",
+			"Move them to a draft-free coop they can learn before the weather turns.",
+			"Offer a low roost. Some will ignore it for another week. That’s fine."
+		],
+		donts: ["Don’t toss under-feathered chicks into a spring night because week six “should” be ready.", "Don’t heat the whole coop with a lamp once they are feathered. Dry air and no draft beat a fire risk."]
+	},
+	{
+		week: 8,
+		milestone: "Starter time is over. Grower feed, real roosts, and a pecking order.",
+		dos: [
+			"Switch to a grower ration around 16–18% protein. No layer feed yet.",
+			"Give about 8–10 inches of roost per bird, lower than you think, with a soft landing.",
+			"Spend a minute watching who gets pushed off the feed. Space fixes more bullying than lectures."
+		],
+		donts: ["Don’t offer oyster shell “just in case.” Extra calcium is hard on young kidneys.", "Don’t keep a heat lamp running out of habit."]
+	},
+	{
+		week: 12,
+		milestone: "They look like small hens. They are not ready to lay, and they eat like they are.",
+		dos: [
+			"Keep grower feed as the meal. Treats stay under about a tenth of what they eat.",
+			"If a bird is getting picked bloody, separate her until the skin heals and add space or cover.",
+			"Check mites early. A pale, restless pullet is easier to help now."
+		],
+		donts: ["Don’t assume a redder comb means eggs are days away. It often means weeks.", "Don’t mix them into a cranky adult flock on a single afternoon without a way to split the pen."]
+	},
+	{
+		week: 16,
+		milestone: "Put the nest boxes in before anyone needs them.",
+		dos: [
+			"One nest for every four or five pullets, darker and lower than the roosts.",
+			"Fake ceramic eggs can show them where eggs belong. So does collecting from the right place only.",
+			"Watch for the squat: a pullet who crouches when you reach toward her is close to laying."
+		],
+		donts: ["Don’t let them sleep in the nests. That fills boxes with manure and broken eggs later.", "Don’t switch the whole flock to layer feed if younger chicks are still eating with them."]
+	},
+	{
+		week: 18,
+		milestone: "Production hybrids can lay any day. The first eggs are often tiny, double-yolked, or soft.",
+		dos: [
+			"Move layers onto a complete layer ration at the first eggs, or around now if these are production birds about to start.",
+			"Put out oyster shell free-choice.",
+			"Collect daily so they don’t learn that eggs are toys."
+		],
+		donts: ["Don’t decide a heritage pullet is “broken” because a hybrid chart said week 18.", "Don’t feed a layer ration to cockerels or to chicks still in the grower stage if you can split the feeders."]
+	},
+	{
+		week: 22,
+		milestone: "A steady hen lays in the morning, more often than not, and then gets on with her day.",
+		dos: [
+			"Track who is actually laying if you can. A pullet who strains and produces nothing needs help the same day.",
+			"Keep daylight in mind. Short days slow even a mature hen.",
+			"Leave a broody alone only if you truly want chicks and can protect them."
+		],
+		donts: ["Don’t wash every egg out of habit. A clean egg keeps its bloom. A washed egg goes in the fridge.", "Don’t candle, ship, or eat an egg you found already cracked in the nest."]
+	},
+	{
+		week: 24,
+		milestone: "Heritage breeds may still be waiting. Hybrids that haven’t laid deserve a closer look.",
+		dos: [
+			"Check weight, parasites, and day length before you blame the bird.",
+			"A bright, well-feathered heritage pullet with a small comb may simply be young.",
+			"If an ISA-type hen is well past six months with no egg and a shrinking comb, ask a vet or an experienced keeper to handle her — she may be ill, or not a hen."
+		],
+		donts: ["Don’t add a rooster “to make them lay.” Hens lay without one. A rooster only makes eggs fertile.", "Don’t keep lighting the coop all night. A rest after dusk is part of how they find the roost."]
+	}
+];
+function heatCopy(week) {
+	if (week <= 0) return "95°F (35°C) at chick height, with cooler floor so they can walk away from the heat.";
+	if (week >= 6) return "Heat usually comes off once they are fully feathered and nights stay above about 50°F (10°C). Huddled birds are still cold. Panting birds are hot.";
+	const temp = 95 - week * 5;
+	return `${temp}°F (${Math.round((temp - 32) * 5 / 9)}°C) under the warm zone. Drop about 5°F a week. Behavior outranks the thermometer.`;
+}
+function feedCopy(week) {
+	if (week < 8) return "Chick starter, about 18–20% protein. Use a medicated (amprolium) starter only if they were not vaccinated for coccidiosis. Skip extra vitamins while you use amprolium — thiamine works against it.";
+	if (week < 18) return "Grower feed, about 16–18% protein. Still no layer ration. The calcium that helps a hen shell an egg is the calcium that damages a pullet’s kidneys.";
+	return "Layer feed from the first eggs — roughly 16% protein plus calcium. Oyster shell stays in a separate dish so heavy layers can take more and non-layers can leave it.";
+}
+function weekGuide(week) {
+	const w = Math.max(0, Math.min(24, Math.round(week)));
+	const beat = [...beats].reverse().find((item) => item.week <= w) ?? beats[0];
+	const phase = w < 6 ? "Brooder" : w < 18 ? "Grow-out" : "Point of lay";
+	return {
+		week: w,
+		label: w === 0 ? "Arrival day" : `Week ${w}`,
+		phase,
+		heat: heatCopy(w),
+		feed: feedCopy(w),
+		milestone: beat.milestone,
+		dos: beat.dos,
+		donts: beat.donts
+	};
+}
+//#endregion
+export { weekGuide as t };
