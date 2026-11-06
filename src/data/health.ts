@@ -68,11 +68,11 @@ const conditions: Condition[] = [
     name: "Egg binding",
     urgency: "emergency",
     summary:
-      "A hen who strains, walks like a penguin, and doesn’t pass an egg can die the same day. This is not a “wait and see” problem.",
+      "Straining with no egg is urgent. A hen can worsen quickly, and this checker cannot confirm egg binding. Prompt veterinary advice matters, especially if she is weak or getting worse.",
     steps: [
-      "Put her somewhere warm, dim, and quiet with water. A warm bath up to the vent can relax her. Dry her fully afterward.",
-      "If you already keep a poultry calcium supplement and know how to give it, a dose can help a hen whose shell gland is stalling. Don’t experiment with random pills.",
-      "Call a vet if she hasn’t passed an egg within about an hour, or sooner if she is limp or closing her eyes. Never break the egg inside her.",
+      "Call a veterinarian promptly. Do not wait out a set number of hours. Call sooner if she is limp, weak, or closing her eyes.",
+      "A warm, quiet spot and a warm bath up to the vent can be supportive. Dry her fully afterward. If you already keep a poultry calcium supplement and know how to give it, a dose can support a hen whose shell gland is stalling. These steps must not delay the call. Don’t experiment with random pills.",
+      "Never break the egg inside her.",
     ],
     weights: { straining: 6, lethargy: 1, isolating: 1, "off-feed": 1 },
   },
@@ -191,7 +191,7 @@ const conditions: Condition[] = [
     name: "Molt — often normal",
     urgency: "watch",
     summary:
-      "Once a year, usually as days shorten, hens drop feathers and pause laying. If she is bright, eating, and the loss is roughly symmetrical, that is molt. Pin feathers coming in are tender.",
+      "Molt timing varies. It often shows up as days shorten, sometimes late summer into fall, but it is not one fixed annual schedule. Hens drop feathers and pause laying. If she is bright, eating, and the loss is roughly symmetrical, molt is one possible explanation. Pin feathers coming in are tender.",
     steps: [
       "Keep the protein in a complete feed. A few mealworms are a treat, not a cure.",
       "Don’t add overnight lighting in the middle of a hard molt just to force eggs.",

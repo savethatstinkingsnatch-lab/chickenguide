@@ -12,14 +12,15 @@ const terms: { term: string; meaning: string }[] = [
   { term: "Cockerel", meaning: "Young male." },
   {
     term: "NPIP",
-    meaning: "National Poultry Improvement Plan (disease-tested hatcheries).",
+    meaning:
+      "National Poultry Improvement Plan: a voluntary USDA testing and certification program for specified poultry diseases. It reduces particular risks; it does not guarantee a bird is free of every disease.",
   },
   {
     term: "Hardware cloth",
     meaning: "Welded wire mesh (use ~1/2 inch for predators).",
   },
   { term: "Apron", meaning: "Mesh buried outward from the run to stop diggers." },
-  { term: "Bloom", meaning: "Natural coating on an unwashed eggshell." },
+  { term: "Bloom", meaning: "Natural coating on a fresh eggshell. Washing can damage it, so clean dirt carefully — and still refrigerate eggs after collection." },
   { term: "Layer feed", meaning: "Complete feed with extra calcium for laying hens." },
   { term: "Broody", meaning: "A hen who wants to sit eggs." },
   { term: "Molt", meaning: "Seasonal feather loss and laying pause." },

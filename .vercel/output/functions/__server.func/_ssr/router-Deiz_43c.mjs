@@ -3,7 +3,7 @@ import { _ as createFileRoute, b as useRouter, d as Scripts, f as HeadContent, g
 import { c as Feather, d as BookOpen, f as Bird, i as Stethoscope, l as Compass, r as Sun, s as Library, t as TriangleAlert, u as CalendarRange } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
 import { n as persist, r as create, t as createJSONStorage } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/chapters-E12b6IC4.js
+//#region node_modules/.nitro/vite/services/ssr/assets/chapters-D_YB_UXk.js
 var chapters = [
 	{
 		slug: "before-you-start",
@@ -41,7 +41,7 @@ var chapters = [
 				blocks: [
 					{
 						type: "p",
-						text: "Buy chicks from an NPIP hatchery, or adults from a keeper whose birds look bright and whose coop doesn’t smell like ammonia. A parking-lot bird is how respiratory disease enters a neighborhood."
+						text: "Buy chicks from an NPIP hatchery, or adults from a keeper whose birds look bright and whose coop doesn’t smell like ammonia. NPIP is a voluntary USDA testing and certification program for specified diseases and categories. Certification lowers those particular risks. It does not mean the birds are guaranteed free of every disease. Birds from unknown sources can introduce disease even when they look healthy."
 					},
 					{
 						type: "p",
@@ -132,7 +132,7 @@ var chapters = [
 				blocks: [
 					{
 						type: "p",
-						text: "Start at 95°F (35°C) at chick height and drop about five degrees each week. The thermometer is a backup. Chicks piled under the lamp are cold. Chicks panting in a ring at the edge are hot. Quiet chicks spread through the warm zone are right."
+						text: "Start at 95°F (35°C) at chick height and drop about five degrees each week, and always leave a cooler area they can move into. Watch how the chicks stand, not only the thermometer. Chicks piled under the lamp are cold. Chicks panting in a ring at the edge are hot. Quiet chicks spread through the warm zone are right."
 					},
 					{
 						type: "p",
@@ -181,7 +181,7 @@ var chapters = [
 				heading: "Space is behavior",
 				blocks: [{
 					type: "p",
-					text: "Four square feet of coop floor and ten of run, per standard bird, is a minimum — not a kindness. Tight birds pick feathers, break eggs, and get dirty faster than you can clean. Bantams need less. Brahmas need more. Free-ranging hours forgive a smaller run. A run that is their only outdoors does not."
+					text: "Four square feet of coop floor and ten of run, per bird, is a common planning guideline, not a code minimum. University of Minnesota Extension gives a range of about 3–5 square feet indoors per bird; other recommendations differ. Tight birds pick feathers, break eggs, and get dirty faster than you can clean. Heavier breeds often need the roomier end of the range. A smaller bantam is not automatically fine in less space. Hours outside do not make a cramped run adequate."
 				}]
 			},
 			{
@@ -300,7 +300,7 @@ var chapters = [
 		slug: "eggs",
 		number: "07",
 		title: "Eggs",
-		dek: "When they start, why they stop, and how to store an egg without washing the protection off it.",
+		dek: "When they start, why they stop, and how to collect, clean, and refrigerate eggs.",
 		minutes: 7,
 		widget: "daylight",
 		sections: [
@@ -318,10 +318,10 @@ var chapters = [
 				heading: "Light, molt, and the winter pause",
 				blocks: [{
 					type: "p",
-					text: "A hen’s ovary listens to day length. Production falls as days drop under about 14 hours, and a hard molt — usually late summer into fall — shuts laying down while feathers come back. Both are normal in a bird that is eating and bright."
+					text: "A hen’s ovary listens to day length. Laying often declines as daylight shortens. More than about 12 hours can be enough to keep some hens going; keepers who add light commonly aim for 14–16 hours total. A hard molt often falls in late summer into fall, but timing varies and is not one fixed annual schedule. Molt pauses laying while feathers come back. A short-day slowdown and a molt are both normal in a bird that is eating and bright."
 				}, {
 					type: "p",
-					text: "Some keepers add light in the morning to hold a 14–16 hour day, and let dusk stay natural so they can still find the roost. A first-year pullet can also be left to rest through her first winter. All-night light is not a favor. They need darkness."
+					text: "Some keepers add light in the morning to aim for 14–16 hours total, and let dusk stay natural so the birds can still find the roost. A first-year pullet can also be left to rest through her first winter. All-night light is not a favor. They need darkness."
 				}]
 			},
 			{
@@ -330,16 +330,18 @@ var chapters = [
 					{
 						type: "ul",
 						items: [
-							"Collect daily, twice in heat. Eggs left in the nest get broken, dirty, or incubated by a hen you didn’t ask.",
-							"A clean egg has a bloom that slows bacteria. Don’t wash it unless it’s dirty. If you wash it, refrigerate it. Local custom and food rules differ; when in doubt, refrigerate.",
-							"Wash your hands with soap and water after handling birds, eggs, feed, or the coop. Keep nesting boxes clean. Don’t eat raw cookie dough made with unwashed nest eggs. Young children, pregnant people, older adults, and anyone with a weak immune system should be extra careful around live poultry — chicks are cute and still carry germs.",
-							"Store pointy end down if you’re holding them. Don’t eat a cracked nest egg.",
+							"Collect often — at least daily, twice in heat. Eggs left in the nest get broken, dirty, or incubated by a hen you didn’t ask.",
+							"Keep nesting boxes clean so eggs stay clean. Refrigerate eggs promptly after you collect them.",
+							"Clean dirt carefully. Don’t wash a warm fresh egg; water can pull bacteria through the shell. Dry-clean light dirt if you can. If an egg is too dirty to clean that way, don’t serve it.",
+							"Discard cracked eggs. Don’t eat them.",
+							"Wash your hands with soap and water after handling birds, eggs, feed, or the coop. Children under 5 should not touch chicks or other backyard poultry. Don’t eat raw cookie dough made with nest eggs. Pregnant people, older adults, and anyone with a weak immune system should also be extra careful — chicks are cute and still carry germs.",
+							"If you hold eggs in the refrigerator, pointy end down is fine.",
 							"A broody hen stays planted, growls, and plucks her breast. To break it, collect eggs, block the favorite nest, and if needed park her for a few days in a wire-bottomed crate with food, water, and airflow — no nest."
 						]
 					},
 					{
 						type: "note",
-						text: "Soft shells plus straining is not a storage question. Use the health checker and treat egg binding as urgent."
+						text: "Soft shells plus straining is not a storage question. The health checker only suggests possibilities. Straining with no egg needs prompt veterinary advice, especially if she is weak or getting worse."
 					},
 					{
 						type: "cta",
@@ -410,7 +412,7 @@ function chapterBySlug(slug) {
 	return chapters.find((chapter) => chapter.slug === slug);
 }
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/breeds-N-qqbQyx.js
+//#region node_modules/.nitro/vite/services/ssr/assets/breeds-CUeYhdqD.js
 var breeds = [
 	{
 		slug: "rhode-island-red",
@@ -494,7 +496,7 @@ var breeds = [
 		beginner: true,
 		summary: "A handsome English dual-purpose bird with white-tipped feathers that speckle more after each molt. Reliable layers of tinted eggs and calm enough for a first flock.",
 		keep: [
-			"They like to range. If the run is their whole world, make it bigger than the minimum.",
+			"They like to range. If the run is their whole world, give them more than the planning guideline. Time outside does not make a tight run adequate.",
 			"Speckles increase with age. A plain-looking pullet is not the wrong bird.",
 			"Good family birds, though “friendly” still means a chicken, not a dog."
 		],
@@ -722,7 +724,7 @@ function breedBySlug(slug) {
 	return breeds.find((breed) => breed.slug === slug);
 }
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Bw6076gQ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Deiz_43c.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -1385,52 +1387,52 @@ var Route$10 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter$9 = () => import("./routes-xyjudjxg.mjs");
+var $$splitComponentImporter$9 = () => import("./routes-2vuCEG8h.mjs");
 var Route$9 = createFileRoute("/")({
 	head: () => ({ meta: [{ title: "Chickens: Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$9, "component")
 });
-var $$splitComponentImporter$8 = () => import("./flock-UjiJWZfq.mjs");
+var $$splitComponentImporter$8 = () => import("./flock-Dk4CL9Ip.mjs");
 var Route$8 = createFileRoute("/flock")({
 	head: () => ({ meta: [{ title: "Flock · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-var $$splitComponentImporter$7 = () => import("./glossary-uNT5jvEx.mjs");
+var $$splitComponentImporter$7 = () => import("./glossary-Db0rgpad.mjs");
 var Route$7 = createFileRoute("/glossary")({
 	head: () => ({ meta: [{ title: "Glossary · Chickens: Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-var $$splitComponentImporter$6 = () => import("./health-D_A6Rr2T.mjs");
+var $$splitComponentImporter$6 = () => import("./health-CHeVB_En.mjs");
 var Route$6 = createFileRoute("/health")({
 	head: () => ({ meta: [{ title: "Health · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./start-CrEHrYVp.mjs");
+var $$splitComponentImporter$5 = () => import("./start-DC2-aemJ.mjs");
 var Route$5 = createFileRoute("/start")({
 	head: () => ({ meta: [{ title: "Start here · Chickens: Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./timeline-BAbkCjCK.mjs");
+var $$splitComponentImporter$4 = () => import("./timeline-C0t40T3i.mjs");
 var Route$4 = createFileRoute("/timeline")({
 	head: () => ({ meta: [{ title: "Timeline · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./breeds-DuGGRZGk.mjs");
+var $$splitComponentImporter$3 = () => import("./breeds-CKSizYhJ.mjs");
 var Route$3 = createFileRoute("/breeds/")({
 	head: () => ({ meta: [{ title: "Breeds · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("../_slug-CXBqHoTk.mjs");
+var $$splitComponentImporter$2 = () => import("../_slug-DDBU5fdg.mjs");
 var Route$2 = createFileRoute("/breeds/$slug")({
 	head: ({ params }) => ({ meta: [{ title: `${breedBySlug(params.slug)?.name ?? "Breed"} · Henhouse` }] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./guide-D6T5dbO-.mjs");
+var $$splitComponentImporter$1 = () => import("./guide-BcuAl0Is.mjs");
 var Route$1 = createFileRoute("/guide/")({
 	head: () => ({ meta: [{ title: "Guide · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("../_slug-BUI7rJZ8.mjs");
+var $$splitComponentImporter = () => import("../_slug-BLoPaWdX.mjs");
 var Route = createFileRoute("/guide/$slug")({
 	head: ({ params }) => ({ meta: [{ title: `${chapterBySlug(params.slug)?.title ?? "Guide"} · Henhouse` }] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")

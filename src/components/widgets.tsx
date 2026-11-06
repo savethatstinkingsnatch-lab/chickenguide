@@ -65,16 +65,18 @@ export function AppLink({
 export function SpaceWidget() {
   const [birds, setBirds] = useState(4);
   const [size, setSize] = useState<"bantam" | "standard" | "heavy">("standard");
-  const coopEach = size === "bantam" ? 2 : size === "heavy" ? 5 : 4;
-  const runEach = size === "bantam" ? 5 : size === "heavy" ? 12 : 10;
-  const roost = size === "bantam" ? 8 : 10;
+  const coopEach = size === "heavy" ? 5 : 4;
+  const runEach = size === "heavy" ? 12 : 10;
+  const roost = 10;
   const nests = Math.max(1, Math.ceil(birds / 4));
 
   return (
     <section className="my-6 rounded-xl border border-line bg-card p-4 md:p-5">
       <h3 className="text-xl">Floor, nests, roost</h3>
       <p className="mt-1 text-sm text-muted">
-        Minimums, not a luxury coop. More floor means fewer picked feathers.
+        Planning guidelines, not a code minimum. About 4 sq ft of coop and 10 of run is a common
+        target; University of Minnesota Extension cites about 3–5 sq ft indoors. A bantam is not
+        automatically fine in less space, and time outside does not fix a tight run.
       </p>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         <label className="text-sm font-medium">
@@ -95,9 +97,9 @@ export function SpaceWidget() {
             value={size}
             onChange={(event) => setSize(event.target.value as typeof size)}
           >
-            <option value="bantam">Bantam</option>
+            <option value="bantam">Bantam — same floor guideline</option>
             <option value="standard">Standard</option>
-            <option value="heavy">Heavy (Brahma, large Orpington)</option>
+            <option value="heavy">Heavy — roomier end of the range</option>
           </select>
         </label>
       </div>
@@ -180,14 +182,15 @@ export function DaylightWidget() {
   useEffect(() => setMonth(new Date().getMonth()), []);
   const index = month ?? 0;
   const current = daylight[index] ?? daylight[0];
-  const gap = Math.max(0, 14 - (current?.hours ?? 14));
+  const hours = current?.hours ?? 14;
 
   return (
     <section className="my-6 rounded-xl border border-line bg-card p-4 md:p-5">
       <h3 className="text-xl">Day length and laying</h3>
       <p className="mt-1 text-sm text-muted">
         Approximate daylight near 40°N — Chicago, New York, northern California. Farther north is
-        shorter in winter. Hens lay best around 14–16 hours of light.
+        shorter in winter. Laying often slows as days shorten. More than about 12 hours can maintain
+        production; keepers who add light commonly aim for 14–16 hours total.
       </p>
       <label className="mt-4 block text-sm font-medium">
         Month
@@ -204,10 +207,12 @@ export function DaylightWidget() {
         </select>
       </label>
       <p className="mt-4 text-sm">
-        About <span className="tabular-nums font-medium">{current?.hours} hours</span> of light.{" "}
-        {gap > 0.4
-          ? `That is roughly ${gap.toFixed(1)} hours short of a 14-hour day. If you supplement, add it in the morning so dusk still sends them to the roost.`
-          : "That is enough light for most hens to keep laying, molt and age aside."}{" "}
+        About <span className="tabular-nums font-medium">{hours} hours</span> of light.{" "}
+        {hours < 12
+          ? "Days this short are when laying often declines. If you add light, many keepers aim for 14–16 hours total, in the morning, so dusk still sends them to the roost."
+          : hours < 14
+            ? "More than about 12 hours can keep some hens laying. If you add light, a common target is 14–16 hours total, added in the morning."
+            : "This sits in the 14–16 hour range many keepers aim for if they supplement. Molt and age can still pause eggs."}{" "}
         Don’t leave a lamp on all night.
       </p>
     </section>

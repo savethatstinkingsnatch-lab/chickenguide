@@ -120,7 +120,7 @@ export const breeds: Breed[] = [
     summary:
       "A handsome English dual-purpose bird with white-tipped feathers that speckle more after each molt. Reliable layers of tinted eggs and calm enough for a first flock.",
     keep: [
-      "They like to range. If the run is their whole world, make it bigger than the minimum.",
+      "They like to range. If the run is their whole world, give them more than the planning guideline. Time outside does not make a tight run adequate.",
       "Speckles increase with age. A plain-looking pullet is not the wrong bird.",
       "Good family birds, though “friendly” still means a chicken, not a dog.",
     ],

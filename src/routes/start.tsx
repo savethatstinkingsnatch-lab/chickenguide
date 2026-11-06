@@ -7,11 +7,11 @@ export const Route = createFileRoute("/start")({
 
 const steps = [
   "Read your town rules (hen limit, roosters, setbacks).",
-  "Order NPIP chicks; ask about Marek’s vaccine.",
+  "Order chicks from an NPIP hatchery — it tests for specified diseases and is not a guarantee they are disease-free — and ask about Marek’s vaccine.",
   "Set up the brooder the day before they arrive.",
   "Build predator-proof housing with hardware cloth and a buried apron.",
   "Feed the right ration for their age.",
-  "Collect eggs daily; wash hands.",
+  "Collect eggs often, refrigerate them promptly, and wash your hands. Children under 5 should not touch the birds.",
   "Latch the coop every night.",
 ];
 

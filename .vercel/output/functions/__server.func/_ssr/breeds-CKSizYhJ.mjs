@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { q as require_react, x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { c as matchesFilter, o as breedFilters, s as breeds } from "./router-Bw6076gQ.mjs";
-import { n as EggMark } from "./widgets-Dn7fAHfJ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/breeds-DuGGRZGk.js
+import { c as matchesFilter, o as breedFilters, s as breeds } from "./router-Deiz_43c.mjs";
+import { n as EggMark } from "./widgets-BKkOoTcR.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/breeds-CKSizYhJ.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function BreedsPage() {

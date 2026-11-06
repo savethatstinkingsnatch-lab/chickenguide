@@ -114,12 +114,12 @@ export const seasonNotes: { title: string; body: string }[] = [
     body: "Heat and age thin the shells. Keep oyster shell available, collect twice, and don’t store eggs in a hot coop. Wasps drown in waterers — give the birds a second drinker.",
   },
   {
-    title: "August molt",
-    body: "Feathers on the ground and a pause in eggs are often molt, not illness, if the hen is bright and eating. Protein matters more than a lamp. Pin feathers are live tissue — don’t handle her roughly.",
+    title: "Late-summer molt",
+    body: "Feathers on the ground and a pause in eggs are often molt, not illness, if the hen is bright and eating. Timing varies — August is common, not a rule. Protein matters more than a lamp. Pin feathers are live tissue — don’t handle her roughly.",
   },
   {
     title: "September rodents",
-    body: "Mice move toward feed as nights cool. Metal cans with lids, no bag feed on the floor, and a clean-up under the feeder. Laying drops with the day length. That’s normal.",
+    body: "Mice move toward feed as nights cool. Metal cans with lids, no bag feed on the floor, and a clean-up under the feeder. Laying often eases off as the days shorten. That’s common, not a fixed cutoff.",
   },
   {
     title: "October drafts",

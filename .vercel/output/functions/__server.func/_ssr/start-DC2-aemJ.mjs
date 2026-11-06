@@ -1,13 +1,13 @@
 import { x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/start-CrEHrYVp.js
+//#region node_modules/.nitro/vite/services/ssr/assets/start-DC2-aemJ.js
 var import_jsx_runtime = require_jsx_runtime();
 var steps = [
 	"Read your town rules (hen limit, roosters, setbacks).",
-	"Order NPIP chicks; ask about Marek’s vaccine.",
+	"Order chicks from an NPIP hatchery — it tests for specified diseases and is not a guarantee they are disease-free — and ask about Marek’s vaccine.",
 	"Set up the brooder the day before they arrive.",
 	"Build predator-proof housing with hardware cloth and a buried apron.",
 	"Feed the right ration for their age.",
-	"Collect eggs daily; wash hands.",
+	"Collect eggs often, refrigerate them promptly, and wash your hands. Children under 5 should not touch the birds.",
 	"Latch the coop every night."
 ];
 function StartPage() {

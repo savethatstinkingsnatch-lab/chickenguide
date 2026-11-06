@@ -1,5 +1,5 @@
 import { x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/glossary-uNT5jvEx.js
+//#region node_modules/.nitro/vite/services/ssr/assets/glossary-Db0rgpad.js
 var import_jsx_runtime = require_jsx_runtime();
 var terms = [
 	{
@@ -20,7 +20,7 @@ var terms = [
 	},
 	{
 		term: "NPIP",
-		meaning: "National Poultry Improvement Plan (disease-tested hatcheries)."
+		meaning: "National Poultry Improvement Plan: a voluntary USDA testing and certification program for specified poultry diseases. It reduces particular risks; it does not guarantee a bird is free of every disease."
 	},
 	{
 		term: "Hardware cloth",
@@ -32,7 +32,7 @@ var terms = [
 	},
 	{
 		term: "Bloom",
-		meaning: "Natural coating on an unwashed eggshell."
+		meaning: "Natural coating on a fresh eggshell. Washing can damage it, so clean dirt carefully — and still refrigerate eggs after collection."
 	},
 	{
 		term: "Layer feed",

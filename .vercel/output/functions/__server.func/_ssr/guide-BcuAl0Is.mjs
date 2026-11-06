@@ -1,7 +1,7 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { q as require_react, x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { i as useCoop, u as chapters } from "./router-Bw6076gQ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/guide-D6T5dbO-.js
+import { i as useCoop, u as chapters } from "./router-Deiz_43c.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/guide-BcuAl0Is.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function GuideIndex() {

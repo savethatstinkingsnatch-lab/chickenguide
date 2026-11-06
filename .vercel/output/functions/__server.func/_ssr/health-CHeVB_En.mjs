@@ -1,7 +1,7 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { q as require_react, x as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as Button } from "./button-HFY9zwJu.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/health-D_A6Rr2T.js
+//#region node_modules/.nitro/vite/services/ssr/assets/health-CHeVB_En.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var symptoms = [
@@ -150,11 +150,11 @@ var conditions = [
 		id: "egg-bound",
 		name: "Egg binding",
 		urgency: "emergency",
-		summary: "A hen who strains, walks like a penguin, and doesn’t pass an egg can die the same day. This is not a “wait and see” problem.",
+		summary: "Straining with no egg is urgent. A hen can worsen quickly, and this checker cannot confirm egg binding. Prompt veterinary advice matters, especially if she is weak or getting worse.",
 		steps: [
-			"Put her somewhere warm, dim, and quiet with water. A warm bath up to the vent can relax her. Dry her fully afterward.",
-			"If you already keep a poultry calcium supplement and know how to give it, a dose can help a hen whose shell gland is stalling. Don’t experiment with random pills.",
-			"Call a vet if she hasn’t passed an egg within about an hour, or sooner if she is limp or closing her eyes. Never break the egg inside her."
+			"Call a veterinarian promptly. Do not wait out a set number of hours. Call sooner if she is limp, weak, or closing her eyes.",
+			"A warm, quiet spot and a warm bath up to the vent can be supportive. Dry her fully afterward. If you already keep a poultry calcium supplement and know how to give it, a dose can support a hen whose shell gland is stalling. These steps must not delay the call. Don’t experiment with random pills.",
+			"Never break the egg inside her."
 		],
 		weights: {
 			straining: 6,
@@ -298,7 +298,7 @@ var conditions = [
 		id: "molt",
 		name: "Molt — often normal",
 		urgency: "watch",
-		summary: "Once a year, usually as days shorten, hens drop feathers and pause laying. If she is bright, eating, and the loss is roughly symmetrical, that is molt. Pin feathers coming in are tender.",
+		summary: "Molt timing varies. It often shows up as days shorten, sometimes late summer into fall, but it is not one fixed annual schedule. Hens drop feathers and pause laying. If she is bright, eating, and the loss is roughly symmetrical, molt is one possible explanation. Pin feathers coming in are tender.",
 		steps: [
 			"Keep the protein in a complete feed. A few mealworms are a treat, not a cure.",
 			"Don’t add overnight lighting in the middle of a hard molt just to force eggs.",
@@ -415,7 +415,7 @@ function HealthPage() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-3 text-muted",
-					children: "Pick the signs in front of you. This sorts common backyard patterns and tells you what usually happens next. It does not replace a poultry vet, and it will not give you a drug dose."
+					children: "Pick the signs in front of you. Matches are possible explanations to discuss with a veterinarian, not diagnoses. Several conditions share the same signs, and a checklist cannot tell them apart. This will not give you a drug dose."
 				})
 			]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -445,41 +445,48 @@ function HealthPage() {
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
 				className: "lg:sticky lg:top-6 lg:self-start",
 				"aria-live": "polite",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-					className: "text-xl",
-					children: "What it might be"
-				}), selected.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-3 text-sm text-muted",
-					children: "Start with the most obvious sign — blood in the droppings, a bird straining, or several birds sick at once."
-				}) : results.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-3 text-sm",
-					children: "Those signs don’t point at one pattern in this list. Separate a bird who is fluffed or not eating, write down what you see, and call a vet if she is worse by evening."
-				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-					className: "mt-3 flex flex-col gap-3",
-					children: results.map((result) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-						className: "rounded-xl border border-line bg-card p-4",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-								className: "flex flex-wrap items-center gap-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: result.urgency === "emergency" ? "rounded-full bg-rust-deep px-2 py-0.5 text-xs font-semibold text-card" : result.urgency === "soon" ? "rounded-full border border-rust px-2 py-0.5 text-xs font-semibold text-rust-deep" : "rounded-full border border-sage px-2 py-0.5 text-xs font-semibold text-sage",
-									children: urgencyCopy[result.urgency]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "font-display text-xl",
-									children: result.name
-								})]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-2 text-sm",
-								children: result.summary
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
-								className: "mt-3 list-decimal space-y-2 pl-5 text-sm",
-								children: result.steps.map((step) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: step }, step))
-							})
-						]
-					}, result.id))
-				})]
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						className: "text-xl",
+						children: "Possible explanations"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-1 text-sm text-muted",
+						children: "Talk these over with a poultry vet. This is not a diagnosis."
+					}),
+					selected.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-3 text-sm text-muted",
+						children: "Start with the most obvious sign — blood in the droppings, a bird straining, or several birds sick at once."
+					}) : results.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-3 text-sm",
+						children: "Those signs don’t point at one pattern in this list. Separate a bird who is fluffed or not eating, write down what you see, and call a vet if she is worse by evening."
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+						className: "mt-3 flex flex-col gap-3",
+						children: results.map((result) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+							className: "rounded-xl border border-line bg-card p-4",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+									className: "flex flex-wrap items-center gap-2",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: result.urgency === "emergency" ? "rounded-full bg-rust-deep px-2 py-0.5 text-xs font-semibold text-card" : result.urgency === "soon" ? "rounded-full border border-rust px-2 py-0.5 text-xs font-semibold text-rust-deep" : "rounded-full border border-sage px-2 py-0.5 text-xs font-semibold text-sage",
+										children: urgencyCopy[result.urgency]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "font-display text-xl",
+										children: result.name
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-2 text-sm",
+									children: result.summary
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+									className: "mt-3 list-decimal space-y-2 pl-5 text-sm",
+									children: result.steps.map((step) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: step }, step))
+								})
+							]
+						}, result.id))
+					})
+				]
 			})]
 		})]
 	});

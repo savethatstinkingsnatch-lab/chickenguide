@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/timeline-CQe6rf89.js
+//#region node_modules/.nitro/vite/services/ssr/assets/timeline-DkMfZQiS.js
 var beats = [
 	{
 		week: 0,
@@ -113,11 +113,11 @@ var beats = [
 		week: 22,
 		milestone: "A steady hen lays in the morning, more often than not, and then gets on with her day.",
 		dos: [
-			"Track who is actually laying if you can. A pullet who strains and produces nothing needs help the same day.",
+			"Track who is actually laying if you can. A pullet who strains and produces nothing needs prompt veterinary advice, especially if she is weak or getting worse.",
 			"Keep daylight in mind. Short days slow even a mature hen.",
 			"Leave a broody alone only if you truly want chicks and can protect them."
 		],
-		donts: ["Don’t wash every egg out of habit. A clean egg keeps its bloom. A washed egg goes in the fridge.", "Don’t candle, ship, or eat an egg you found already cracked in the nest."]
+		donts: ["Don’t wash a warm fresh egg. Keep nests clean, collect often, clean dirt carefully, and refrigerate promptly. Discard cracked eggs.", "Don’t candle, ship, or eat an egg you found already cracked in the nest."]
 	},
 	{
 		week: 24,

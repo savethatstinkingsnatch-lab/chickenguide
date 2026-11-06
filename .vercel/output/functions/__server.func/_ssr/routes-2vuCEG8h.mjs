@@ -1,11 +1,11 @@
 import { x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Plus, o as Minus } from "../_libs/lucide-react.mjs";
-import { i as useCoop, u as chapters } from "./router-Bw6076gQ.mjs";
+import { i as useCoop, u as chapters } from "./router-Deiz_43c.mjs";
 import { n as buttonVariants, t as Button } from "./button-HFY9zwJu.mjs";
 import { c as sumEggs, i as formatShort, l as weeksSince, o as lastNDates, r as formatPretty } from "./dates-CQ8B31mG.mjs";
 import { t as useClientDate } from "./use-client-date-D6ent2VH.mjs";
-import { t as weekGuide } from "./timeline-CQe6rf89.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-xyjudjxg.js
+import { t as weekGuide } from "./timeline-DkMfZQiS.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-2vuCEG8h.js
 var import_jsx_runtime = require_jsx_runtime();
 var morningTasks = [
 	{
@@ -118,12 +118,12 @@ var seasonNotes = [
 		body: "Heat and age thin the shells. Keep oyster shell available, collect twice, and don’t store eggs in a hot coop. Wasps drown in waterers — give the birds a second drinker."
 	},
 	{
-		title: "August molt",
-		body: "Feathers on the ground and a pause in eggs are often molt, not illness, if the hen is bright and eating. Protein matters more than a lamp. Pin feathers are live tissue — don’t handle her roughly."
+		title: "Late-summer molt",
+		body: "Feathers on the ground and a pause in eggs are often molt, not illness, if the hen is bright and eating. Timing varies — August is common, not a rule. Protein matters more than a lamp. Pin feathers are live tissue — don’t handle her roughly."
 	},
 	{
 		title: "September rodents",
-		body: "Mice move toward feed as nights cool. Metal cans with lids, no bag feed on the floor, and a clean-up under the feeder. Laying drops with the day length. That’s normal."
+		body: "Mice move toward feed as nights cool. Metal cans with lids, no bag feed on the floor, and a clean-up under the feeder. Laying often eases off as the days shorten. That’s common, not a fixed cutoff."
 	},
 	{
 		title: "October drafts",

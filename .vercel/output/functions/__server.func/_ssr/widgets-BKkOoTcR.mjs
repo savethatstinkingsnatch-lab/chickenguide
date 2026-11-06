@@ -1,6 +1,6 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { q as require_react, x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/widgets-Dn7fAHfJ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/widgets-BKkOoTcR.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function EggMark({ color, label }) {
@@ -50,9 +50,9 @@ function AppLink({ to, className, children }) {
 function SpaceWidget() {
 	const [birds, setBirds] = (0, import_react.useState)(4);
 	const [size, setSize] = (0, import_react.useState)("standard");
-	const coopEach = size === "bantam" ? 2 : size === "heavy" ? 5 : 4;
-	const runEach = size === "bantam" ? 5 : size === "heavy" ? 12 : 10;
-	const roost = size === "bantam" ? 8 : 10;
+	const coopEach = size === "heavy" ? 5 : 4;
+	const runEach = size === "heavy" ? 12 : 10;
+	const roost = 10;
 	const nests = Math.max(1, Math.ceil(birds / 4));
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "my-6 rounded-xl border border-line bg-card p-4 md:p-5",
@@ -63,7 +63,7 @@ function SpaceWidget() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-1 text-sm text-muted",
-				children: "Minimums, not a luxury coop. More floor means fewer picked feathers."
+				children: "Planning guidelines, not a code minimum. About 4 sq ft of coop and 10 of run is a common target; University of Minnesota Extension cites about 3–5 sq ft indoors. A bantam is not automatically fine in less space, and time outside does not fix a tight run."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "mt-4 grid gap-3 sm:grid-cols-2",
@@ -86,7 +86,7 @@ function SpaceWidget() {
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 								value: "bantam",
-								children: "Bantam"
+								children: "Bantam — same floor guideline"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 								value: "standard",
@@ -94,7 +94,7 @@ function SpaceWidget() {
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 								value: "heavy",
-								children: "Heavy (Brahma, large Orpington)"
+								children: "Heavy — roomier end of the range"
 							})
 						]
 					})]
@@ -250,8 +250,7 @@ function DaylightWidget() {
 	const [month, setMonth] = (0, import_react.useState)(null);
 	(0, import_react.useEffect)(() => setMonth((/* @__PURE__ */ new Date()).getMonth()), []);
 	const index = month ?? 0;
-	const current = daylight[index] ?? daylight[0];
-	const gap = Math.max(0, 14 - (current?.hours ?? 14));
+	const hours = (daylight[index] ?? daylight[0])?.hours ?? 14;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "my-6 rounded-xl border border-line bg-card p-4 md:p-5",
 		children: [
@@ -261,7 +260,7 @@ function DaylightWidget() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-1 text-sm text-muted",
-				children: "Approximate daylight near 40°N — Chicago, New York, northern California. Farther north is shorter in winter. Hens lay best around 14–16 hours of light."
+				children: "Approximate daylight near 40°N — Chicago, New York, northern California. Farther north is shorter in winter. Laying often slows as days shorten. More than about 12 hours can maintain production; keepers who add light commonly aim for 14–16 hours total."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
 				className: "mt-4 block text-sm font-medium",
@@ -281,11 +280,11 @@ function DaylightWidget() {
 					"About ",
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 						className: "tabular-nums font-medium",
-						children: [current?.hours, " hours"]
+						children: [hours, " hours"]
 					}),
 					" of light.",
 					" ",
-					gap > .4 ? `That is roughly ${gap.toFixed(1)} hours short of a 14-hour day. If you supplement, add it in the morning so dusk still sends them to the roost.` : "That is enough light for most hens to keep laying, molt and age aside.",
+					hours < 12 ? "Days this short are when laying often declines. If you add light, many keepers aim for 14–16 hours total, in the morning, so dusk still sends them to the roost." : hours < 14 ? "More than about 12 hours can keep some hens laying. If you add light, a common target is 14–16 hours total, added in the morning." : "This sits in the 14–16 hour range many keepers aim for if they supplement. Molt and age can still pause eggs.",
 					" ",
 					"Don’t leave a lamp on all night."
 				]

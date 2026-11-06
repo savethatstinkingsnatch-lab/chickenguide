@@ -32,9 +32,9 @@ function HealthPage() {
         </p>
         <h1 className="mt-2 text-4xl">What you’re seeing</h1>
         <p className="mt-3 text-muted">
-          Pick the signs in front of you. This sorts common backyard patterns and tells you what
-          usually happens next. It does not replace a poultry vet, and it will not give you a drug
-          dose.
+          Pick the signs in front of you. Matches are possible explanations to discuss with a
+          veterinarian, not diagnoses. Several conditions share the same signs, and a checklist
+          cannot tell them apart. This will not give you a drug dose.
         </p>
       </header>
 
@@ -76,7 +76,10 @@ function HealthPage() {
         </div>
 
         <aside className="lg:sticky lg:top-6 lg:self-start" aria-live="polite">
-          <h2 className="text-xl">What it might be</h2>
+          <h2 className="text-xl">Possible explanations</h2>
+          <p className="mt-1 text-sm text-muted">
+            Talk these over with a poultry vet. This is not a diagnosis.
+          </p>
           {selected.length === 0 ? (
             <p className="mt-3 text-sm text-muted">
               Start with the most obvious sign — blood in the droppings, a bird straining, or
