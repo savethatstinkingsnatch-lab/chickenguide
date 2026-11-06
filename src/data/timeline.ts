@@ -26,6 +26,7 @@ const beats: Beat[] = [
       "Set the brooder the day before so the lamp, bedding, and water are already steady.",
       "Dip each beak in the water as they come out of the box so they learn where it is.",
       "Use pine shavings or paper towels over a textured mat. They need grip.",
+      "Plan to be home when the post office calls. Open the box indoors, offer water first, then feed. Expect that shipping is hard on chicks; losses happen. Avoid ordering when your weather will be extreme heat or deep cold if you can choose the week.",
     ],
     donts: [
       "Don’t put them on newspaper alone. Spraddle leg starts on slick floors.",

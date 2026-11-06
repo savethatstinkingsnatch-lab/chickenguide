@@ -65,11 +65,19 @@ export const chapters: Chapter[] = [
           },
           {
             type: "p",
+            text: "Ask the hatchery whether chicks are vaccinated for Marek’s disease. Many hatcheries offer it. It is given at the hatchery, not something you mix into feed at home. Write down what vaccines and medicated starter (if any) came with the birds.",
+          },
+          {
+            type: "p",
             text: "Sexed pullets cost more and are still wrong sometimes, especially in breeds that are hard to sex. Straight-run chicks are cheaper and half roosters. Have a plan for the males before you fall for them.",
           },
           {
             type: "note",
             text: "Quarantine every new bird for 30 days, out of sight and out of shared tools, even if they “look fine.”",
+          },
+          {
+            type: "p",
+            text: "See also Volume 19: Rabbits for another small-livestock housing and predator-proofing guide.",
           },
           { type: "cta", to: "/breeds", label: "Compare breeds" },
         ],
@@ -121,6 +129,15 @@ export const chapters: Chapter[] = [
           {
             type: "note",
             text: "Shell color is genetic and stays in a range for that hen. It does not tell you the egg is healthier, richer, or safer.",
+          },
+        ],
+      },
+      {
+        heading: "Broilers",
+        blocks: [
+          {
+            type: "p",
+            text: "This guide is written for backyard egg flocks. Broilers (meat chickens) grow on a different feed and schedule. If you will process birds for meat, learn from your county extension office or an experienced mentor first. Keep the work clean, keep carcasses cold, and follow local rules. This app does not teach slaughter steps.",
           },
         ],
       },
@@ -359,6 +376,7 @@ export const chapters: Chapter[] = [
             items: [
               "Collect daily, twice in heat. Eggs left in the nest get broken, dirty, or incubated by a hen you didn’t ask.",
               "A clean egg has a bloom that slows bacteria. Don’t wash it unless it’s dirty. If you wash it, refrigerate it. Local custom and food rules differ; when in doubt, refrigerate.",
+              "Wash your hands with soap and water after handling birds, eggs, feed, or the coop. Keep nesting boxes clean. Don’t eat raw cookie dough made with unwashed nest eggs. Young children, pregnant people, older adults, and anyone with a weak immune system should be extra careful around live poultry — chicks are cute and still carry germs.",
               "Store pointy end down if you’re holding them. Don’t eat a cracked nest egg.",
               "A broody hen stays planted, growls, and plucks her breast. To break it, collect eggs, block the favorite nest, and if needed park her for a few days in a wire-bottomed crate with food, water, and airflow — no nest.",
             ],

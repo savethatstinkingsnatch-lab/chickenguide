@@ -1,8 +1,8 @@
 import { x as require_jsx_runtime, y as Link } from "./_libs/@tanstack/react-router+[...].mjs";
-import { a as breedBySlug, r as Route$2, s as breeds } from "./_ssr/router-BHfoVtIn.mjs";
+import { a as breedBySlug, r as Route$2, s as breeds } from "./_ssr/router-Bw6076gQ.mjs";
 import { n as buttonVariants } from "./_ssr/button-HFY9zwJu.mjs";
 import { n as EggMark } from "./_ssr/widgets-Dn7fAHfJ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_slug-DEWwdkXW.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_slug-CXBqHoTk.js
 var import_jsx_runtime = require_jsx_runtime();
 function BreedPage() {
 	const { slug } = Route$2.useParams();

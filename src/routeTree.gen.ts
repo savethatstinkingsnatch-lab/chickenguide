@@ -11,7 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FlockRouteImport } from './routes/flock'
+import { Route as GlossaryRouteImport } from './routes/glossary'
 import { Route as HealthRouteImport } from './routes/health'
+import { Route as StartRouteImport } from './routes/start'
 import { Route as TimelineRouteImport } from './routes/timeline'
 import { Route as BreedsIndexRouteImport } from './routes/breeds/index'
 import { Route as BreedsSlugRouteImport } from './routes/breeds/$slug'
@@ -28,9 +30,19 @@ const FlockRoute = FlockRouteImport.update({
   path: '/flock',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GlossaryRoute = GlossaryRouteImport.update({
+  id: '/glossary',
+  path: '/glossary',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const HealthRoute = HealthRouteImport.update({
   id: '/health',
   path: '/health',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartRoute = StartRouteImport.update({
+  id: '/start',
+  path: '/start',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TimelineRoute = TimelineRouteImport.update({
@@ -62,7 +74,9 @@ const GuideSlugRoute = GuideSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/flock': typeof FlockRoute
+  '/glossary': typeof GlossaryRoute
   '/health': typeof HealthRoute
+  '/start': typeof StartRoute
   '/timeline': typeof TimelineRoute
   '/breeds/$slug': typeof BreedsSlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -72,7 +86,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/flock': typeof FlockRoute
+  '/glossary': typeof GlossaryRoute
   '/health': typeof HealthRoute
+  '/start': typeof StartRoute
   '/timeline': typeof TimelineRoute
   '/breeds/$slug': typeof BreedsSlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -83,7 +99,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/flock': typeof FlockRoute
+  '/glossary': typeof GlossaryRoute
   '/health': typeof HealthRoute
+  '/start': typeof StartRoute
   '/timeline': typeof TimelineRoute
   '/breeds/$slug': typeof BreedsSlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -95,7 +113,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/flock'
+    | '/glossary'
     | '/health'
+    | '/start'
     | '/timeline'
     | '/breeds/$slug'
     | '/guide/$slug'
@@ -105,7 +125,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/flock'
+    | '/glossary'
     | '/health'
+    | '/start'
     | '/timeline'
     | '/breeds/$slug'
     | '/guide/$slug'
@@ -115,7 +137,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/flock'
+    | '/glossary'
     | '/health'
+    | '/start'
     | '/timeline'
     | '/breeds/$slug'
     | '/guide/$slug'
@@ -126,7 +150,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   FlockRoute: typeof FlockRoute
+  GlossaryRoute: typeof GlossaryRoute
   HealthRoute: typeof HealthRoute
+  StartRoute: typeof StartRoute
   TimelineRoute: typeof TimelineRoute
   BreedsSlugRoute: typeof BreedsSlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
@@ -150,11 +176,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FlockRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/glossary': {
+      id: '/glossary'
+      path: '/glossary'
+      fullPath: '/glossary'
+      preLoaderRoute: typeof GlossaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/health': {
       id: '/health'
       path: '/health'
       fullPath: '/health'
       preLoaderRoute: typeof HealthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start': {
+      id: '/start'
+      path: '/start'
+      fullPath: '/start'
+      preLoaderRoute: typeof StartRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/timeline': {
@@ -198,7 +238,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   FlockRoute: FlockRoute,
+  GlossaryRoute: GlossaryRoute,
   HealthRoute: HealthRoute,
+  StartRoute: StartRoute,
   TimelineRoute: TimelineRoute,
   BreedsSlugRoute: BreedsSlugRoute,
   GuideSlugRoute: GuideSlugRoute,

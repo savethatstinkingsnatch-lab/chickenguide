@@ -171,6 +171,21 @@ var CalendarRange = createLucideIcon("calendar-range", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Compass = createLucideIcon("compass", [["path", {
+	d: "m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z",
+	key: "9ktpf1"
+}], ["circle", {
+	cx: "12",
+	cy: "12",
+	r: "10",
+	key: "1mglay"
+}]]);
+/**
+* @license lucide-react v0.510.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Feather = createLucideIcon("feather", [
 	["path", {
 		d: "M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z",
@@ -183,6 +198,30 @@ var Feather = createLucideIcon("feather", [
 	["path", {
 		d: "M17.5 15H9",
 		key: "1oz8nu"
+	}]
+]);
+/**
+* @license lucide-react v0.510.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Library = createLucideIcon("library", [
+	["path", {
+		d: "m16 6 4 14",
+		key: "ji33uf"
+	}],
+	["path", {
+		d: "M12 6v14",
+		key: "1n7gus"
+	}],
+	["path", {
+		d: "M8 8v12",
+		key: "1gg7y9"
+	}],
+	["path", {
+		d: "M4 4v16",
+		key: "6qkkli"
 	}]
 ]);
 /**
@@ -339,4 +378,4 @@ var TriangleAlert = createLucideIcon("triangle-alert", [
 	}]
 ]);
 //#endregion
-export { Plus as a, CalendarRange as c, Stethoscope as i, BookOpen as l, Trash2 as n, Minus as o, Sun as r, Feather as s, TriangleAlert as t, Bird as u };
+export { Plus as a, Feather as c, BookOpen as d, Bird as f, Stethoscope as i, Compass as l, Trash2 as n, Minus as o, Sun as r, Library as s, TriangleAlert as t, CalendarRange as u };

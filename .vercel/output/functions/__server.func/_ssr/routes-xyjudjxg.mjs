@@ -1,11 +1,11 @@
 import { x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Plus, o as Minus } from "../_libs/lucide-react.mjs";
-import { i as useCoop, u as chapters } from "./router-BHfoVtIn.mjs";
+import { i as useCoop, u as chapters } from "./router-Bw6076gQ.mjs";
 import { n as buttonVariants, t as Button } from "./button-HFY9zwJu.mjs";
 import { c as sumEggs, i as formatShort, l as weeksSince, o as lastNDates, r as formatPretty } from "./dates-CQ8B31mG.mjs";
 import { t as useClientDate } from "./use-client-date-D6ent2VH.mjs";
-import { t as weekGuide } from "./timeline-04Iz0NCN.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-zqi_6sP9.js
+import { t as weekGuide } from "./timeline-CQe6rf89.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-xyjudjxg.js
 var import_jsx_runtime = require_jsx_runtime();
 var morningTasks = [
 	{
@@ -169,12 +169,32 @@ function TodayPage() {
 						children: "Henhouse"
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-3 max-w-xl text-lg",
+						children: "The Education Revolution Pocket Guide, Volume 26: Chickens"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-1 text-sm text-muted",
+						children: "by Blue and the Awesome Dudes"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-3 max-w-xl text-lg text-muted",
 						children: "Water, feed, eggs, and the week your birds are actually in. The log stays on this device."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-3 text-sm text-ink",
 						children: key ? formatPretty(key) : "Today"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm font-medium",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/start",
+							className: "text-rust-deep",
+							children: "Start here"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/glossary",
+							className: "text-rust-deep",
+							children: "Glossary"
+						})]
 					})
 				] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 					src: "/images/coop-door.jpg",

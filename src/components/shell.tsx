@@ -1,9 +1,17 @@
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { Bird, BookOpen, CalendarRange, Feather, Stethoscope, Sun } from "lucide-react";
+import { Bird, BookOpen, CalendarRange, Compass, Feather, Library, Stethoscope, Sun } from "lucide-react";
 import { useHydrateCoop } from "@/lib/store";
 
-type Destination = "/" | "/timeline" | "/guide" | "/breeds" | "/health" | "/flock";
+type Destination =
+  | "/"
+  | "/start"
+  | "/timeline"
+  | "/guide"
+  | "/breeds"
+  | "/health"
+  | "/flock"
+  | "/glossary";
 
 type Item = {
   to: Destination;
@@ -16,11 +24,13 @@ type Item = {
 
 const items: Item[] = [
   { to: "/", label: "Today", short: "Today", icon: Sun, exact: true, mobile: true },
+  { to: "/start", label: "Start here", short: "Start", icon: Compass, exact: true, mobile: true },
   { to: "/timeline", label: "Timeline", short: "Weeks", icon: CalendarRange, exact: true, mobile: false },
   { to: "/guide", label: "Guide", short: "Guide", icon: BookOpen, exact: false, mobile: true },
   { to: "/breeds", label: "Breeds", short: "Breeds", icon: Feather, exact: false, mobile: true },
   { to: "/health", label: "Health", short: "Health", icon: Stethoscope, exact: true, mobile: true },
   { to: "/flock", label: "Flock", short: "Flock", icon: Bird, exact: true, mobile: true },
+  { to: "/glossary", label: "Glossary", short: "Terms", icon: Library, exact: true, mobile: false },
 ];
 
 function ItemLink({ item, variant }: { item: Item; variant: "side" | "tab" }) {
@@ -38,6 +48,12 @@ function ItemLink({ item, variant }: { item: Item; variant: "side" | "tab" }) {
     case "/":
       return (
         <Link to="/" activeOptions={opts} className={className}>
+          {inner}
+        </Link>
+      );
+    case "/start":
+      return (
+        <Link to="/start" activeOptions={opts} className={className}>
           {inner}
         </Link>
       );
@@ -68,6 +84,12 @@ function ItemLink({ item, variant }: { item: Item; variant: "side" | "tab" }) {
     case "/flock":
       return (
         <Link to="/flock" activeOptions={opts} className={className}>
+          {inner}
+        </Link>
+      );
+    case "/glossary":
+      return (
+        <Link to="/glossary" activeOptions={opts} className={className}>
           {inner}
         </Link>
       );
@@ -107,7 +129,10 @@ export function Shell({ children }: { children: ReactNode }) {
         <div id="content">{children}</div>
         <footer className="mt-12 border-t border-line pt-4 text-sm text-muted">
           Husbandry for backyard flocks — not a diagnosis. Your ordinance, a poultry vet, and the
-          state animal-health office outrank this guide.
+          state animal-health office outrank this guide. Blue and the Awesome Dudes are not
+          responsible for illness, injury, citations, or flock loss. Part of The Education
+          Revolution pocket guide series. Privacy: This guide does not collect your name, email, or
+          any personal information. Your flock notes are saved only on your own device.
         </footer>
       </div>
       <nav className="tab-bar" aria-label="Sections">

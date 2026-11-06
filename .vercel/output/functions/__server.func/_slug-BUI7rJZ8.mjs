@@ -1,8 +1,8 @@
 import { x as require_jsx_runtime, y as Link } from "./_libs/@tanstack/react-router+[...].mjs";
-import { i as useCoop, l as chapterBySlug, n as Route, u as chapters } from "./_ssr/router-BHfoVtIn.mjs";
+import { i as useCoop, l as chapterBySlug, n as Route, u as chapters } from "./_ssr/router-Bw6076gQ.mjs";
 import { n as buttonVariants, t as Button } from "./_ssr/button-HFY9zwJu.mjs";
 import { r as Widget, t as AppLink } from "./_ssr/widgets-Dn7fAHfJ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_slug-CKcU3QMv.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_slug-BUI7rJZ8.js
 var import_jsx_runtime = require_jsx_runtime();
 var art = {
 	"the-brooder": {

@@ -1,9 +1,9 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { _ as createFileRoute, b as useRouter, d as Scripts, f as HeadContent, g as lazyRouteComponent, h as Outlet, m as createRouter, q as require_react, v as createRootRoute, x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { c as CalendarRange, i as Stethoscope, l as BookOpen, r as Sun, s as Feather, t as TriangleAlert, u as Bird } from "../_libs/lucide-react.mjs";
+import { c as Feather, d as BookOpen, f as Bird, i as Stethoscope, l as Compass, r as Sun, s as Library, t as TriangleAlert, u as CalendarRange } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
 import { n as persist, r as create, t as createJSONStorage } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/chapters-DfWCWn59.js
+//#region node_modules/.nitro/vite/services/ssr/assets/chapters-E12b6IC4.js
 var chapters = [
 	{
 		slug: "before-you-start",
@@ -45,11 +45,19 @@ var chapters = [
 					},
 					{
 						type: "p",
+						text: "Ask the hatchery whether chicks are vaccinated for Marek’s disease. Many hatcheries offer it. It is given at the hatchery, not something you mix into feed at home. Write down what vaccines and medicated starter (if any) came with the birds."
+					},
+					{
+						type: "p",
 						text: "Sexed pullets cost more and are still wrong sometimes, especially in breeds that are hard to sex. Straight-run chicks are cheaper and half roosters. Have a plan for the males before you fall for them."
 					},
 					{
 						type: "note",
 						text: "Quarantine every new bird for 30 days, out of sight and out of shared tools, even if they “look fine.”"
+					},
+					{
+						type: "p",
+						text: "See also Volume 19: Rabbits for another small-livestock housing and predator-proofing guide."
 					},
 					{
 						type: "cta",
@@ -101,6 +109,13 @@ var chapters = [
 				}, {
 					type: "note",
 					text: "Shell color is genetic and stays in a range for that hen. It does not tell you the egg is healthier, richer, or safer."
+				}]
+			},
+			{
+				heading: "Broilers",
+				blocks: [{
+					type: "p",
+					text: "This guide is written for backyard egg flocks. Broilers (meat chickens) grow on a different feed and schedule. If you will process birds for meat, learn from your county extension office or an experienced mentor first. Keep the work clean, keep carcasses cold, and follow local rules. This app does not teach slaughter steps."
 				}]
 			}
 		]
@@ -317,6 +332,7 @@ var chapters = [
 						items: [
 							"Collect daily, twice in heat. Eggs left in the nest get broken, dirty, or incubated by a hen you didn’t ask.",
 							"A clean egg has a bloom that slows bacteria. Don’t wash it unless it’s dirty. If you wash it, refrigerate it. Local custom and food rules differ; when in doubt, refrigerate.",
+							"Wash your hands with soap and water after handling birds, eggs, feed, or the coop. Keep nesting boxes clean. Don’t eat raw cookie dough made with unwashed nest eggs. Young children, pregnant people, older adults, and anyone with a weak immune system should be extra careful around live poultry — chicks are cute and still carry germs.",
 							"Store pointy end down if you’re holding them. Don’t eat a cracked nest egg.",
 							"A broody hen stays planted, growls, and plucks her breast. To break it, collect eggs, block the favorite nest, and if needed park her for a few days in a wire-bottomed crate with food, water, and airflow — no nest."
 						]
@@ -706,7 +722,7 @@ function breedBySlug(slug) {
 	return breeds.find((breed) => breed.slug === slug);
 }
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-BHfoVtIn.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Bw6076gQ.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -1123,6 +1139,14 @@ var items = [
 		mobile: true
 	},
 	{
+		to: "/start",
+		label: "Start here",
+		short: "Start",
+		icon: Compass,
+		exact: true,
+		mobile: true
+	},
+	{
 		to: "/timeline",
 		label: "Timeline",
 		short: "Weeks",
@@ -1161,6 +1185,14 @@ var items = [
 		icon: Bird,
 		exact: true,
 		mobile: true
+	},
+	{
+		to: "/glossary",
+		label: "Glossary",
+		short: "Terms",
+		icon: Library,
+		exact: true,
+		mobile: false
 	}
 ];
 function ItemLink({ item, variant }) {
@@ -1175,6 +1207,12 @@ function ItemLink({ item, variant }) {
 	switch (item.to) {
 		case "/": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 			to: "/",
+			activeOptions: opts,
+			className,
+			children: inner
+		});
+		case "/start": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+			to: "/start",
 			activeOptions: opts,
 			className,
 			children: inner
@@ -1205,6 +1243,12 @@ function ItemLink({ item, variant }) {
 		});
 		case "/flock": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 			to: "/flock",
+			activeOptions: opts,
+			className,
+			children: inner
+		});
+		case "/glossary": return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+			to: "/glossary",
 			activeOptions: opts,
 			className,
 			children: inner
@@ -1263,7 +1307,7 @@ function Shell({ children }) {
 					children
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
 					className: "mt-12 border-t border-line pt-4 text-sm text-muted",
-					children: "Husbandry for backyard flocks — not a diagnosis. Your ordinance, a poultry vet, and the state animal-health office outrank this guide."
+					children: "Husbandry for backyard flocks — not a diagnosis. Your ordinance, a poultry vet, and the state animal-health office outrank this guide. Blue and the Awesome Dudes are not responsible for illness, injury, citations, or flock loss. Part of The Education Revolution pocket guide series. Privacy: This guide does not collect your name, email, or any personal information. Your flock notes are saved only on your own device."
 				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
@@ -1277,9 +1321,9 @@ function Shell({ children }) {
 		]
 	});
 }
-var styles_default = "/assets/styles-DvVq2uLy.css";
-var APP_NAME = "Henhouse";
-var Route$8 = createRootRoute({
+var styles_default = "/assets/styles-CjK6kIMT.css";
+var APP_NAME = "Chickens: Henhouse";
+var Route$10 = createRootRoute({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -1341,22 +1385,32 @@ var Route$8 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./routes-zqi_6sP9.mjs");
-var Route$7 = createFileRoute("/")({
-	head: () => ({ meta: [{ title: "Today · Henhouse" }] }),
+var $$splitComponentImporter$9 = () => import("./routes-xyjudjxg.mjs");
+var Route$9 = createFileRoute("/")({
+	head: () => ({ meta: [{ title: "Chickens: Henhouse" }] }),
+	component: lazyRouteComponent($$splitComponentImporter$9, "component")
+});
+var $$splitComponentImporter$8 = () => import("./flock-UjiJWZfq.mjs");
+var Route$8 = createFileRoute("/flock")({
+	head: () => ({ meta: [{ title: "Flock · Henhouse" }] }),
+	component: lazyRouteComponent($$splitComponentImporter$8, "component")
+});
+var $$splitComponentImporter$7 = () => import("./glossary-uNT5jvEx.mjs");
+var Route$7 = createFileRoute("/glossary")({
+	head: () => ({ meta: [{ title: "Glossary · Chickens: Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-var $$splitComponentImporter$6 = () => import("./flock-TsbB03Nk.mjs");
-var Route$6 = createFileRoute("/flock")({
-	head: () => ({ meta: [{ title: "Flock · Henhouse" }] }),
+var $$splitComponentImporter$6 = () => import("./health-D_A6Rr2T.mjs");
+var Route$6 = createFileRoute("/health")({
+	head: () => ({ meta: [{ title: "Health · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./health-D_A6Rr2T.mjs");
-var Route$5 = createFileRoute("/health")({
-	head: () => ({ meta: [{ title: "Health · Henhouse" }] }),
+var $$splitComponentImporter$5 = () => import("./start-CrEHrYVp.mjs");
+var Route$5 = createFileRoute("/start")({
+	head: () => ({ meta: [{ title: "Start here · Chickens: Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./timeline-Dy7rXWzy.mjs");
+var $$splitComponentImporter$4 = () => import("./timeline-BAbkCjCK.mjs");
 var Route$4 = createFileRoute("/timeline")({
 	head: () => ({ meta: [{ title: "Timeline · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
@@ -1366,71 +1420,83 @@ var Route$3 = createFileRoute("/breeds/")({
 	head: () => ({ meta: [{ title: "Breeds · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("../_slug-DEWwdkXW.mjs");
+var $$splitComponentImporter$2 = () => import("../_slug-CXBqHoTk.mjs");
 var Route$2 = createFileRoute("/breeds/$slug")({
 	head: ({ params }) => ({ meta: [{ title: `${breedBySlug(params.slug)?.name ?? "Breed"} · Henhouse` }] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./guide-B-dYOexj.mjs");
+var $$splitComponentImporter$1 = () => import("./guide-D6T5dbO-.mjs");
 var Route$1 = createFileRoute("/guide/")({
 	head: () => ({ meta: [{ title: "Guide · Henhouse" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("../_slug-CKcU3QMv.mjs");
+var $$splitComponentImporter = () => import("../_slug-BUI7rJZ8.mjs");
 var Route = createFileRoute("/guide/$slug")({
 	head: ({ params }) => ({ meta: [{ title: `${chapterBySlug(params.slug)?.title ?? "Guide"} · Henhouse` }] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
-var IndexRoute = Route$7.update({
+var IndexRoute = Route$9.update({
 	id: "/",
 	path: "/",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
 });
-var FlockRoute = Route$6.update({
+var FlockRoute = Route$8.update({
 	id: "/flock",
 	path: "/flock",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
 });
-var HealthRoute = Route$5.update({
+var GlossaryRoute = Route$7.update({
+	id: "/glossary",
+	path: "/glossary",
+	getParentRoute: () => Route$10
+});
+var HealthRoute = Route$6.update({
 	id: "/health",
 	path: "/health",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
+});
+var StartRoute = Route$5.update({
+	id: "/start",
+	path: "/start",
+	getParentRoute: () => Route$10
 });
 var TimelineRoute = Route$4.update({
 	id: "/timeline",
 	path: "/timeline",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
 });
 var BreedsIndexRoute = Route$3.update({
 	id: "/breeds/",
 	path: "/breeds/",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
 });
 var BreedsSlugRoute = Route$2.update({
 	id: "/breeds/$slug",
 	path: "/breeds/$slug",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
 });
 var GuideIndexRoute = Route$1.update({
 	id: "/guide/",
 	path: "/guide/",
-	getParentRoute: () => Route$8
+	getParentRoute: () => Route$10
 });
 var rootRouteChildren = {
 	IndexRoute,
 	FlockRoute,
+	GlossaryRoute,
 	HealthRoute,
+	StartRoute,
 	TimelineRoute,
 	BreedsSlugRoute,
 	GuideSlugRoute: Route.update({
 		id: "/guide/$slug",
 		path: "/guide/$slug",
-		getParentRoute: () => Route$8
+		getParentRoute: () => Route$10
 	}),
 	BreedsIndexRoute,
 	GuideIndexRoute
 };
-var routeTree = Route$8._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$10._addFileChildren(rootRouteChildren)._addFileTypes();
 var router_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
 function getRouter() {
 	return createRouter({

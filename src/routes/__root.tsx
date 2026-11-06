@@ -4,7 +4,7 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { Shell } from "@/components/shell";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Henhouse";
+const APP_NAME = "Chickens: Henhouse";
 
 export const Route = createRootRoute({
   head: () => ({

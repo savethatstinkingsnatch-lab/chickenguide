@@ -10,7 +10,7 @@ import { useClientDate } from "@/lib/use-client-date";
 import { useCoop } from "@/lib/store";
 
 export const Route = createFileRoute("/")({
-  head: () => ({ meta: [{ title: "Today · Henhouse" }] }),
+  head: () => ({ meta: [{ title: "Chickens: Henhouse" }] }),
   component: TodayPage,
 });
 
@@ -41,11 +41,23 @@ function TodayPage() {
             Field guide
           </p>
           <h1 className="mt-2 text-4xl md:text-5xl">Henhouse</h1>
+          <p className="mt-3 max-w-xl text-lg">
+            The Education Revolution Pocket Guide, Volume 26: Chickens
+          </p>
+          <p className="mt-1 text-sm text-muted">by Blue and the Awesome Dudes</p>
           <p className="mt-3 max-w-xl text-lg text-muted">
             Water, feed, eggs, and the week your birds are actually in. The log stays on this
             device.
           </p>
           <p className="mt-3 text-sm text-ink">{key ? formatPretty(key) : "Today"}</p>
+          <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm font-medium">
+            <Link to="/start" className="text-rust-deep">
+              Start here
+            </Link>
+            <Link to="/glossary" className="text-rust-deep">
+              Glossary
+            </Link>
+          </p>
         </div>
         <img
           src="/images/coop-door.jpg"
