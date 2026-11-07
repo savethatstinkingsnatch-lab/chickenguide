@@ -4,7 +4,7 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { Shell } from "@/components/shell";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Chickens: Henhouse";
+const APP_NAME = "Volume 26: Chickens (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -15,7 +15,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A practical field guide to raising chickens: daily care, breeds, brooding, feeding, eggs, and what to do when a bird looks off.",
+          "Volume 26 of The Education Revolution, by Blue and the Awesome Dudes. A practical field guide to raising chickens: daily care, breeds, brooding, feeding, eggs, and what to do when a bird looks off.",
       },
       { name: "theme-color", content: "#3A2A1C" },
     ],
